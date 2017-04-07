@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scrape_date: 2017-04-07
+  scrape_time: 2017-04-07 09:44:36
+
+two:
+  scrape_date: 2017-04-07
+  scrape_time: 2017-04-07 09:44:36

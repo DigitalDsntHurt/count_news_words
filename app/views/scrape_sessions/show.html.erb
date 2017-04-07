@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Scrape date:</strong>
+  <%= @scrape_session.scrape_date %>
+</p>
+
+<p>
+  <strong>Scrape time:</strong>
+  <%= @scrape_session.scrape_time %>
+</p>
+
+<%= link_to 'Edit', edit_scrape_session_path(@scrape_session) %> |
+<%= link_to 'Back', scrape_sessions_path %>

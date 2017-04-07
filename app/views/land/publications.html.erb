@@ -1,0 +1,38 @@
+<h1 align="center">Publications</h1>
+
+<table align="center" width="100%">
+	<tr>
+		<td valign="top">
+			<h2 align="center">Fox News</h2><hr width="75%">
+			<h3 align="center">Scrape Sessions</h3>
+			<ul>
+				<% @fox_scrape_sessions.each {|fss| %>
+					<li><%= fss %></li>
+				<% } %>
+			</ul>
+			<hr width="75%">
+			<h3 align="center">Let's Count</h3>
+			<ul>
+				<li>Total Articles: <%= Article.where(:publication => "fox news").count %></li>
+				<li>Avg Words per Article</li>
+				<li>Most Used Words</li>
+			</ul>
+		</td>
+		<td valign="top">
+			<h2 align="center">New York Times</h2><hr width="75%">
+			<h3 align="center">Scrape Sessions</h3>
+			<ul>
+				<% @nyt_scrape_sessions.each {|nytss| %>
+					<li><%= nytss %></li>
+				<% } %>
+			</ul>
+			<hr width="75%">
+			<h3 align="center">Let's Count</h3>
+			<ul>
+				<li>Total Articles: <%= Article.where(:publication => "new york times").count %></li>
+				<li>Avg Words per Article</li>
+				<li>Most Used Words</li>
+			</ul>
+		</td>
+	</tr>
+</table>

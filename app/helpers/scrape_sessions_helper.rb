@@ -1,0 +1,2 @@
+module ScrapeSessionsHelper
+end
