@@ -29,7 +29,7 @@ end
 scheduler = Rufus::Scheduler.new
 
 #scheduler.every '3h' do
-scheduler.cron '*/20 * * * *' do #, :first_at => Time.now + 2 do 
+scheduler.cron '*/20 * * * *', :first_at => Time.now + 2 do 
 
 	# Set ScrapeSession
 	scrape_sesh = Time.now
